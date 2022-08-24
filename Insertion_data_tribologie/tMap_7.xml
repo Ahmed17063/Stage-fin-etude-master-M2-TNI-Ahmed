@@ -1,0 +1,73 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<externalNode i18n.job.component.parameters="Param&#232;tres du composant :" i18n.job.properties="Propri&#233;t&#233;s" i18n.job.values="Valeurs" i18n.mapper.table.for="Table de mapping de " i18n.mapper.table.properties="Propri&#233;t&#233;s de la table de mapping" i18n.job.name="Nom" i18n.tmap.matching.mode="Mode de rapprochement" i18n.mapper.table.isminimized="isMinimized" i18n.tmap.isreject="isReject" i18n.tmap.isrejectinnnerjoin="isRejectInnerJoin" i18n.tmap.isinnerjoin="isInnerJoin" i18n.tmap.expressionfilter="expressionFilter" i18n.mapper.table.metadata.entries="Entr&#233;es d'une table de m&#233;tadonn&#233;es" i18n.job.type="Type" i18n.mapper.table.expression="Expression" i18n.tmap.isnullable="isNullable" i18n.tmap.constraint.entries="Contrainte d'entr&#233;es de table" name="tMap_7" preview="pictures/_5s0tEAalEe2KbLLzBmOXgQ-tMap_7-PREVIEW.bmp">
+  <parameters>
+    <column name="Statistiques du tStatCatcher">false</column>
+    <column name="Les liens de mapping s'affichent comme&#160;:">AUTO</column>
+    <column name="Chemin du r&#233;pertoire des donn&#233;es temporaires :"></column>
+    <column name="Taille maximale de la m&#233;moire tampon (nombre de lignes) :">2000000</column>
+    <column name="Ignorer les z&#233;ros de fin pour BigDecimal">true</column>
+    <column name="Afficher les informations">false</column>
+    <column name="Commentaire"><![CDATA[]]></column>
+    <column name="Utiliser une r&#232;gle de validation existante">false</column>
+  </parameters>
+  <mapperTable type="input">
+    <table name="row19" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="id" type="String" expression="" isNullable="true"/>
+        <entry name="nom" type="String" expression="" isNullable="true"/>
+        <entry name="source" type="String" expression="" isNullable="true"/>
+        <entry name="type_mat" type="String" expression="" isNullable="true"/>
+        <entry name="type_image" type="String" expression="" isNullable="true"/>
+        <entry name="chemin" type="String" expression="" isNullable="true"/>
+        <entry name="essai" type="String" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="row23" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="true" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="true" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="id" type="int" expression="" isNullable="false"/>
+        <entry name="nom" type="String" expression="row19.essai " isNullable="true"/>
+        <entry name="date_essai" type="java.util.Date" expression="" isNullable="true"/>
+        <entry name="time_essai" type="java.util.Date" expression="" isNullable="true"/>
+        <entry name="type_contact" type="String" expression="" isNullable="true"/>
+        <entry name="coeff_moy_frottement" type="Float" expression="" isNullable="true"/>
+        <entry name="taux_usure" type="Float" expression="" isNullable="true"/>
+        <entry name="temperature" type="Float" expression="" isNullable="true"/>
+        <entry name="pression" type="Float" expression="" isNullable="true"/>
+        <entry name="dist_glissement" type="Float" expression="" isNullable="true"/>
+        <entry name="frequence" type="Float" expression="" isNullable="true"/>
+        <entry name="charge_app" type="Float" expression="" isNullable="true"/>
+        <entry name="mode_usure" type="String" expression="" isNullable="true"/>
+        <entry name="trace_fixe" type="Float" expression="" isNullable="true"/>
+        <entry name="trace_mobile" type="Float" expression="" isNullable="true"/>
+        <entry name="hum_absolue" type="Float" expression="" isNullable="true"/>
+        <entry name="def_pla_app" type="Float" expression="" isNullable="true"/>
+        <entry name="force_frottement" type="Float" expression="" isNullable="true"/>
+        <entry name="surf_cont_hertz" type="Float" expression="" isNullable="true"/>
+        <entry name="surf_reel_cont" type="Float" expression="" isNullable="true"/>
+        <entry name="vit_glissement" type="Float" expression="" isNullable="true"/>
+        <entry name="chal_spec" type="Float" expression="" isNullable="true"/>
+        <entry name="vol_abrasion" type="Float" expression="" isNullable="true"/>
+        <entry name="vol_adhesion" type="Float" expression="" isNullable="true"/>
+        <entry name="vol_fatique" type="Float" expression="" isNullable="true"/>
+        <entry name="fixe_id" type="Integer" expression="" isNullable="true"/>
+        <entry name="mobile_id" type="Integer" expression="" isNullable="true"/>
+        <entry name="machine_id" type="Integer" expression="" isNullable="true"/>
+        <entry name="lubrifiant_id" type="Integer" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="output">
+    <table name="bancessai" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="nom" type="String" expression="row19.nom" isNullable="true"/>
+        <entry name="type_mat" type="String" expression="row19.type_mat" isNullable="true"/>
+        <entry name="chemin" type="String" expression="row19.chemin" isNullable="true"/>
+        <entry name="essai_id" type="Integer" expression="row23.id " isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="var">
+    <table name="Var" isMinimized="true" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null"/>
+  </mapperTable>
+</externalNode>

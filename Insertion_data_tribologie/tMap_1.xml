@@ -1,0 +1,158 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<externalNode i18n.job.component.parameters="Param&#232;tres du composant :" i18n.job.properties="Propri&#233;t&#233;s" i18n.job.values="Valeurs" i18n.mapper.table.for="Table de mapping de " i18n.mapper.table.properties="Propri&#233;t&#233;s de la table de mapping" i18n.job.name="Nom" i18n.tmap.matching.mode="Mode de rapprochement" i18n.mapper.table.isminimized="isMinimized" i18n.tmap.isreject="isReject" i18n.tmap.isrejectinnnerjoin="isRejectInnerJoin" i18n.tmap.isinnerjoin="isInnerJoin" i18n.tmap.expressionfilter="expressionFilter" i18n.mapper.table.metadata.entries="Entr&#233;es d'une table de m&#233;tadonn&#233;es" i18n.job.type="Type" i18n.mapper.table.expression="Expression" i18n.tmap.isnullable="isNullable" i18n.tmap.constraint.entries="Contrainte d'entr&#233;es de table" name="tMap_1" preview="pictures/_5s0tEAalEe2KbLLzBmOXgQ-tMap_1-PREVIEW.bmp">
+  <parameters>
+    <column name="Statistiques du tStatCatcher">false</column>
+    <column name="Les liens de mapping s'affichent comme&#160;:">AUTO</column>
+    <column name="Chemin du r&#233;pertoire des donn&#233;es temporaires :"></column>
+    <column name="Taille maximale de la m&#233;moire tampon (nombre de lignes) :">2000000</column>
+    <column name="Ignorer les z&#233;ros de fin pour BigDecimal">true</column>
+    <column name="Afficher les informations">false</column>
+    <column name="Commentaire"><![CDATA[]]></column>
+    <column name="Utiliser une r&#232;gle de validation existante">false</column>
+  </parameters>
+  <mapperTable type="input">
+    <table name="row4" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="Date" type="java.util.Date" expression="" isNullable="true"/>
+        <entry name="set" type="Double" expression="" isNullable="true"/>
+        <entry name="nom" type="String" expression="" isNullable="true"/>
+        <entry name="mobile" type="String" expression="" isNullable="true"/>
+        <entry name="fixe" type="String" expression="" isNullable="true"/>
+        <entry name="machine" type="String" expression="" isNullable="true"/>
+        <entry name="duree_essai" type="java.util.Date" expression="" isNullable="true"/>
+        <entry name="frequence" type="Double" expression="" isNullable="true"/>
+        <entry name="lubrifiant" type="String" expression="" isNullable="true"/>
+        <entry name="charge_Amplifie" type="Double" expression="" isNullable="true"/>
+        <entry name="type_contact" type="String" expression="" isNullable="true"/>
+        <entry name="temperature" type="Double" expression="" isNullable="true"/>
+        <entry name="pression" type="Double" expression="" isNullable="true"/>
+        <entry name="dist_glissement" type="Double" expression="" isNullable="true"/>
+        <entry name="charge_applique" type="Double" expression="" isNullable="true"/>
+        <entry name="videomicroscopie" type="String" expression="" isNullable="true"/>
+        <entry name="profilometre" type="String" expression="" isNullable="true"/>
+        <entry name="profondeur_trace" type="Double" expression="" isNullable="true"/>
+        <entry name="profondeur_usure_fixe" type="Double" expression="" isNullable="true"/>
+        <entry name="profondeur_usure_mobile" type="Double" expression="" isNullable="true"/>
+        <entry name="hum_absolue" type="Double" expression="" isNullable="true"/>
+        <entry name="def_plastique" type="Double" expression="" isNullable="true"/>
+        <entry name="surf_contact_hertzienne" type="Double" expression="" isNullable="true"/>
+        <entry name="surface_reel_contact" type="Double" expression="" isNullable="true"/>
+        <entry name="vitesse_glissement" type="Double" expression="" isNullable="true"/>
+        <entry name="chaleur_specifique" type="Double" expression="" isNullable="true"/>
+        <entry name="volume_perdu_abrasion" type="Double" expression="" isNullable="true"/>
+        <entry name="volume_perdu_adhesion" type="Double" expression="" isNullable="true"/>
+        <entry name="volume_perdu_fatigue" type="Double" expression="" isNullable="true"/>
+        <entry name="mode_principal_usure" type="String" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="row5" matching-mode="ALL_MATCHES" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="true" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="true" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="id" type="int" expression="" isNullable="false"/>
+        <entry name="nom" type="String" expression="row4.machine " isNullable="true"/>
+        <entry name="type_mvt" type="String" expression="" isNullable="true"/>
+        <entry name="forme_mvt" type="String" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="row7" matching-mode="ALL_MATCHES" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="true" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="id" type="int" expression="" isNullable="false"/>
+        <entry name="nom" type="String" expression="row4.fixe " isNullable="true"/>
+        <entry name="mod_young_eff" type="Float" expression="" isNullable="true"/>
+        <entry name="mode_elast" type="Float" expression="" isNullable="true"/>
+        <entry name="temperature_fusion" type="Float" expression="" isNullable="true"/>
+        <entry name="coeff_poisson" type="Float" expression="" isNullable="true"/>
+        <entry name="cond_thermique" type="Float" expression="" isNullable="true"/>
+        <entry name="lim_elast" type="Float" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="row8" matching-mode="ALL_MATCHES" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="true" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="id" type="int" expression="" isNullable="false"/>
+        <entry name="nom" type="String" expression="row4.mobile " isNullable="true"/>
+        <entry name="mod_young_eff" type="Float" expression="" isNullable="true"/>
+        <entry name="mode_elast" type="Float" expression="" isNullable="true"/>
+        <entry name="temperature_fusion" type="Float" expression="" isNullable="true"/>
+        <entry name="coeff_poisson" type="Float" expression="" isNullable="true"/>
+        <entry name="cond_thermique" type="Float" expression="" isNullable="true"/>
+        <entry name="lim_elast" type="Float" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="row6" matching-mode="ALL_MATCHES" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="true" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="id" type="Integer" expression="" isNullable="true"/>
+        <entry name="nom" type="String" expression="row4.lubrifiant " isNullable="true"/>
+        <entry name="viscosite" type="Double" expression="" isNullable="true"/>
+        <entry name="type_lubrifiant" type="String" expression="" isNullable="true"/>
+        <entry name="famille" type="String" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="output">
+    <table name="essaioutput" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="nom" type="String" expression="row4.nom " isNullable="true"/>
+        <entry name="date_essai" type="java.util.Date" expression="row4.Date " isNullable="true"/>
+        <entry name="type_contact" type="String" expression="row4.type_contact" isNullable="true"/>
+        <entry name="coeff_moy_frottement" type="Double" expression="" isNullable="true"/>
+        <entry name="taux_usure" type="Double" expression="" isNullable="true"/>
+        <entry name="temperature" type="Double" expression="row4.temperature" isNullable="true"/>
+        <entry name="pression" type="Double" expression="row4.pression" isNullable="true"/>
+        <entry name="dist_glissement" type="Double" expression="row4.dist_glissement" isNullable="true"/>
+        <entry name="frequence" type="Double" expression="row4.frequence" isNullable="true"/>
+        <entry name="charge_app" type="Double" expression="row4.charge_applique " isNullable="true"/>
+        <entry name="mode_usure" type="String" expression="row4.mode_principal_usure " isNullable="true"/>
+        <entry name="trace_fixe" type="Double" expression="row4.profondeur_usure_fixe " isNullable="true"/>
+        <entry name="trace_mobile" type="Double" expression="row4.profondeur_usure_mobile " isNullable="true"/>
+        <entry name="hum_absolue" type="Double" expression="row4.hum_absolue" isNullable="true"/>
+        <entry name="def_pla_app" type="Double" expression="row4.def_plastique " isNullable="true"/>
+        <entry name="force_frottement" type="Double" expression="" isNullable="true"/>
+        <entry name="surf_cont_hertz" type="Double" expression="row4.surf_contact_hertzienne " isNullable="true"/>
+        <entry name="surf_reel_cont" type="Double" expression="row4.surface_reel_contact " isNullable="true"/>
+        <entry name="vit_glissement" type="Double" expression="row4.vitesse_glissement " isNullable="true"/>
+        <entry name="chal_spec" type="Double" expression="row4.chaleur_specifique " isNullable="true"/>
+        <entry name="vol_abrasion" type="Double" expression="row4.volume_perdu_abrasion" isNullable="true"/>
+        <entry name="vol_adhesion" type="Double" expression=" row4.volume_perdu_adhesion" isNullable="true"/>
+        <entry name="vol_fatique" type="Double" expression=" row4.volume_perdu_fatigue " isNullable="true"/>
+        <entry name="fixe_id" type="Integer" expression="row7.id " isNullable="true"/>
+        <entry name="mobile_id" type="Integer" expression="row8.id " isNullable="true"/>
+        <entry name="machine_id" type="Integer" expression="row5.id  " isNullable="true"/>
+        <entry name="lubrifiant_id" type="Integer" expression="row6.id " isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="NOT_matched" isMinimized="false" isReject="true" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null">
+      <metadataTableEntries>
+        <entry name="nom" type="String" expression="row4.nom  " isNullable="true"/>
+        <entry name="date_essai" type="java.util.Date" expression="row4.Date  " isNullable="true"/>
+        <entry name="type_contact" type="String" expression="row4.type_contact " isNullable="true"/>
+        <entry name="coeff_moy_frottement" type="Double" expression="row10.coeff_frottement  " isNullable="true"/>
+        <entry name="taux_usure" type="Double" expression="row10.usure  " isNullable="true"/>
+        <entry name="temperature" type="Double" expression="row4.temperature " isNullable="true"/>
+        <entry name="pression" type="Double" expression="row4.pression " isNullable="true"/>
+        <entry name="dist_glissement" type="Double" expression="row4.dist_glissement " isNullable="true"/>
+        <entry name="frequence" type="Double" expression="row4.frequence " isNullable="true"/>
+        <entry name="charge_app" type="Double" expression="row4.charge_applique  " isNullable="true"/>
+        <entry name="mode_usure" type="String" expression="row4.mode_principal_usure  " isNullable="true"/>
+        <entry name="trace_fixe" type="Double" expression="row4.profondeur_usure_fixe  " isNullable="true"/>
+        <entry name="trace_mobile" type="Double" expression="row4.profondeur_usure_mobile  " isNullable="true"/>
+        <entry name="hum_absolue" type="Double" expression="row4.hum_absolue " isNullable="true"/>
+        <entry name="def_pla_app" type="Double" expression="row4.def_plastique  " isNullable="true"/>
+        <entry name="force_frottement" type="Double" expression=" " isNullable="true"/>
+        <entry name="surf_cont_hertz" type="Double" expression="row4.surf_contact_hertzienne  " isNullable="true"/>
+        <entry name="surf_reel_cont" type="Double" expression="row4.surface_reel_contact  " isNullable="true"/>
+        <entry name="vit_glissement" type="Double" expression="row4.vitesse_glissement  " isNullable="true"/>
+        <entry name="chal_spec" type="Double" expression="row4.chaleur_specifique  " isNullable="true"/>
+        <entry name="vol_abrasion" type="Double" expression="row4.volume_perdu_abrasion " isNullable="true"/>
+        <entry name="vol_adhesion" type="Double" expression=" row4.volume_perdu_adhesion " isNullable="true"/>
+        <entry name="vol_fatique" type="Double" expression=" row4.volume_perdu_fatigue  " isNullable="true"/>
+        <entry name="fixe_id" type="Integer" expression="row7.id  " isNullable="true"/>
+        <entry name="mobile_id" type="Integer" expression="row8.id  " isNullable="true"/>
+        <entry name="machine_id" type="Integer" expression="row5.id   " isNullable="true"/>
+        <entry name="lubrifiant_id" type="Integer" expression="row6.id  " isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="var">
+    <table name="Var" isMinimized="true" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false" activateColumnNameFilter="false" columnNameFilter="null"/>
+  </mapperTable>
+</externalNode>
